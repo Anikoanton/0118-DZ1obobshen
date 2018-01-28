@@ -18,6 +18,6 @@ public class Main {
         mas2.changeEllement(1,2);
 
         System.out.println("-----------");
-        System.out.println("-----------");
+        
     }
 }
