@@ -22,9 +22,9 @@ package com.company;
  g. Не забываем про метод добавления фрукта в коробку.
  */
 abstract class Fruit {
-private int weight;
+protected float weight;
 
-    public Fruit(int weight) {
+    public Fruit(float weight) {
         this.weight = weight;
     }
 

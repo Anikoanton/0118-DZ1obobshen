@@ -18,13 +18,24 @@ public class Main {
 
         System.out.println("-----------");
 
+        Apple apple = new Apple();
+        Orange orange = new Orange();
 
-        Box box1=new Box();
-        Apple apple1 = new Apple(2);
-        Apple apple2 = new Apple(4);
+        Box<Apple> appleBox=new Box<Apple>(apple);
+        Box<Orange> orangeBox=new Box<Orange>(orange);
 
-        box1.addBox(apple1);
-        box1.addBox(apple2);
+
+
+
+        for (int i=1; i<10; i++)
+        {
+            appleBox.addBox(apple);
+            orangeBox.addBox(orange);
+        }
+
+       boolean a = appleBox.comparess(orangeBox);
+
+        //box1.addBox(apple2);
         System.out.println("-----------");
 	// write your code here
     }
